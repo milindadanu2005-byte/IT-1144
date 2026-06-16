@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell - UniShelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">📚 UniShelf</div>
+            <ul class="nav1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="browse.html">Browse Books</a></li>
+                <li><a href="sell.html" class="active">Sell a Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav2">
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page1">
+        <h1>List a Used Textbook for Sale</h1>
+        
+        <div class="form1">
+            <form id="sellBook">
+                <div class="group1">
+                    <label for="bookTitle">Textbook Title</label>
+                    <input type="text" id="bookTitle" placeholder="e.g. Operating System Concepts">
+                </div>
+
+                <div class="group1">
+                    <label for="courseCode">Course Subject Code</label>
+                    <input type="text" id="courseCode" placeholder="e.g. ICT 2204">
+                </div>
+
+                <div class="group1">
+                    <label for="bookCondition">Item Condition</label>
+                    <select id="bookCondition">
+                        <option value="">-- Choose Condition --</option>
+                        <option value="Excellent">Excellent (Like New)</option>
+                        <option value="Good">Good (Readable text )</option>
+                        <option value="Fair">Fair (Handwritten )</option>
+                    </select>
+                </div>
+
+                <div class="group1">
+                    <label for="bookPrice">Asking Price (Rs)</label>
+                    <input type="number" id="bookPrice" min="0" placeholder="0.00">
+                </div>
+
+                <button type="submit" class="btn1">Publish Item Node</button>
+            </form>
+        </div>
+
+        <div class="box3">
+            <h3>💡 Rules for Selling Books</h3>
+            <p>Please be honest about any damage or pen marks on your book. Make sure to check your course code so new students can find your book easily.</p>
+        </div>
+
+        <div class="page1 space1">
+            <h2 id="heading" style="display: none; text-align: center;">Your Live Marketplace Listings</h2>
+            <div id="output" class="row1"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 UniShelf Campus Exchange. Fast Dynamic Node Rendering.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
