@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - UniShelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">📚 UniShelf</div>
+            <ul class="nav1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="browse.html">Browse Books</a></li>
+                <li><a href="sell.html">Sell a Book</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav2">
+                <li><a href="login.html" class="active">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page1">
+        <h1>Student Identity Validation</h1>
+        
+        <div class="form1 space1">
+            <form id="portalAuthForm">
+                <div class="group1">
+                    <label for="studentIndex">Student Registration Index</label>
+                    <input type="text" id="studentIndex" placeholder="e.g. 2024/IT/001" required>
+                </div>
+                <div class="group1">
+                    <label for="securityKey">Security PIN passcode</label>	
+                    <input type="password" id="securityKey" placeholder="••••" required>
+                </div>
+                <button type="submit" class="btn1">Login to Access</button>
+            </form>
+        </div>
+
+        <div class="box1 box2" style="max-width: 550px; margin: 30px auto; width: auto;">
+            <h3>Forgot Credentials?</h3>
+            <p>First-year system access logs are automatically provisioned using your primary university enrollment index key. Contact the campus internal computing infrastructure help desk for credential resets.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 UniShelf Campus Exchange. Security Protected Interface.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
